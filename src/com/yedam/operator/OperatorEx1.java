@@ -7,7 +7,8 @@ public class OperatorEx1 {
 		Scanner scn = new Scanner(System.in);
 		System.out.println("숫자를 입력하세요,");
 		System.out.println("숫자를 입력하세요,");
-		scn.nextInt();
+		int result = scn.nextInt();
+		System.out.println(result);
 		scn.close();
 	}
 }
