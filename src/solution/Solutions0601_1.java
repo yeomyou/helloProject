@@ -25,7 +25,7 @@ public class Solutions0601_1 {
 	        for(String repo : set) {
 	        	int blank = repo.indexOf(" ");
 	        	
-	        	String reporter = repo.substring(0,blank); //신고자 이름
+//	        	String reporter = repo.substring(0,blank); //신고자 이름
 	        	String reported = repo.substring(blank+1); //신고당하는 이름
 	        	
 	        	hash.put(reported, hash.getOrDefault(reported, 0)+1);

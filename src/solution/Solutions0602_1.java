@@ -3,7 +3,7 @@ package solution;
 public class Solutions0602_1 {
 	public static void main(String[] args) {
 		
-		int nums[] = {1,2,3,4};
+		int nums[] = {1,2,7,6,4};
 		solution(nums);
 		
 	}
@@ -12,12 +12,12 @@ public class Solutions0602_1 {
         int answer = 0;
         //1번. nums.length C 3 조합의 결과를 다 저장(? 하면 그 조합하는 수 index를 만들어야함.) 거르기.
         int indexFir = 0;
-        
+        //0,1,2,3.
         for(int i=indexFir; i<nums.length-2; i++) {
         	
-        	for(int j=i+1; i<nums.length-1; i++) {
+        	for(int j=i+1; j<nums.length-1; j++) {
         		
-        		for(int k=j+1; i<nums.length; k++) {
+        		for(int k=j+1; k<nums.length; k++) {
         			int tmpNum = nums[i]+nums[j]+nums[k];
         			if(eraNumeric(tmpNum)) {
         				answer++;

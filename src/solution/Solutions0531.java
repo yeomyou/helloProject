@@ -1,6 +1,6 @@
 package solution;
 
-import java.util.Arrays;
+
 
 public class Solutions0531 {
 	public static void main(String[] args) {

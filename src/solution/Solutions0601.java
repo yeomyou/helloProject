@@ -17,7 +17,6 @@ public class Solutions0601 {
 		Arrays.sort(completion);
 
 		Stack<String> stack = new Stack<>();
-		int player = participant.length;
 		
 		for(String a : participant) {
 			stack.push(a);
