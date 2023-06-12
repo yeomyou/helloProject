@@ -11,7 +11,7 @@ public class EmpListApp {
 		app = new EmpArray();
 		
 		EmpList appAL = null;
-		app = new EmpArrayList();
+		appAL = new EmpArrayList();
 		
 		app.init();
 		app.input();
@@ -28,29 +28,27 @@ public class EmpListApp {
 			int empId = Integer.parseInt(id);
 			System.out.println(app.search(empId));
 			}
+		
 		}
-		
-		
+
 		appAL.init();
 		appAL.input();
 		appAL.print();
 		
 		boolean isOk = true;
 		while(isOk) {
-			System.out.println("조회할 사번을 입력하세요. 뒤로 돌아가려면 exit을 입력하세요.");
-			String id = sc.nextLine();
-			if(id.equals("exit")) {
+			System.out.println("조회할 사번을 입력하세요.. 뒤로 돌아가려면 exit을 입력하세요.");
+			String id2 = sc.nextLine();
+			if(id2.equals("exit")) {
 				isOk = false;
 				break;
 				
 			}else {
-			int empId = Integer.parseInt(id);
+			int empId = Integer.parseInt(id2);
 			System.out.println(appAL.search(empId));
 			}
 		}
-		
-		
-		
-		
-	}
+	
+		}
 }
+
